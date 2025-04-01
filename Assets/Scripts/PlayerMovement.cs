@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float rotationInput = 0f;
     private float movementInput = 0f;
+    
 
     private Animator animator;
 
@@ -18,11 +19,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-    }
-    
-    void Update()
-    {
-        // Add var for checking direction for blend tree
     }
 
     private void FixedUpdate()
@@ -35,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<float>();
+        animator.SetFloat("X", rb.linearVelocity.x);
+        animator.SetFloat("Y", rb.linearVelocity.y);
     }
 
     void OnTurn(InputValue turnValue)

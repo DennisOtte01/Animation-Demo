@@ -74,6 +74,13 @@ https://www.mixamo.com/#/?page=1&query=jump&type=Motion%2CMotionPack
 
 ![trigger](../images/trigger.png "trigger")
 
-## Nu gaan we de idle animatie in de controller vervangen met een blend tree. Maak een blend tree aan en voeg de 4 bestaande walk animaties en de idle animatie eraan toe. Voeg voor elke animatie een Motion Field toe en positioneer deze op de goede plek. In het midden voor Idle, en dan een walk animatie in elke richting.
+## Nu gaan we de idle animatie in de controller vervangen met een blend tree. Rechtermuisklik op de idle animatie in de controller en klik op "Create new blendtree in state". 
+
+![makeblendtree](../images/blendtree-makenew.png "makeblendtree")
+
+## Dubbelklik de nieuwe blend tree om deze te openen en aan te passen.
+
+![blendtree](../images/blendtree-example.png "blendtree")
+## Zorg ervoor dat de blend type 2D Simple Directional is, maak twee parameters aan float X en float Y en selecteer deze in de blend tree. Nu kan je motion fields aanmaken met het '+' teken voor elke animatie, en deze in positie slepen zodat deze blended worden met de twee parameters die zijn meegegeven. Zorg ervoor dat idle in het midden staat met de relevante walk animaties eromheen.
 
 ## Zet Foot IK aan op de blend tree node in de animator component.
