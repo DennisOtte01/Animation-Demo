@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 200
-  movementSpeed: 400
+  movementSpeed: 200
   strafeSpeed: 100
 --- !u!114 &1503093817
 MonoBehaviour:
@@ -1492,7 +1492,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 628e72be24d97e04b8783b6153d429a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.01
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 628e72be24d97e04b8783b6153d429a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1500,7 +1500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 628e72be24d97e04b8783b6153d429a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.44
+      value: -12.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 628e72be24d97e04b8783b6153d429a1, type: 3}
       propertyPath: m_LocalRotation.w

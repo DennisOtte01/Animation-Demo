@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField] private float jumpForce = 200f;
-    [SerializeField] private float movementSpeed = 400f;
-    [SerializeField] private float strafeSpeed = 200f;
+    [SerializeField] private float movementSpeed = 200f;
+    [SerializeField] private float strafeSpeed = 100f;
 
     private float strafeInput = 0f;
     private float movementInput = 0f;
