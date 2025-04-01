@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6bfc32d6-23e5-494a-ad92-097d9dcae5ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Animation-Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Animation-Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlendTreeScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlendTreeScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Materials/Red.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityMarkdownViewer/Documentation/cheatsheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityMarkdownViewer/Documentation/cheatsheet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/BlendTreeScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@920b46832575/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../research-animation-cinemachine/DemoProjects/Animation Demo/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -96,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743427968937</updated>
       <workItem from="1743427971210" duration="646000" />
-      <workItem from="1743515597729" duration="2652000" />
+      <workItem from="1743515597729" duration="3328000" />
     </task>
     <servers />
   </component>

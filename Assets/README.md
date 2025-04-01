@@ -21,6 +21,7 @@ https://www.mixamo.com/#/?page=1&type=Character
 ![rig character](../images/rig-character.png "rig character")
 
 ## Ga nu naar Animation en zet "Bake into Pose" aan op "Root Transform Position (Y)". Dit moet gedaan worden, omdat we de movement doen met rigidbody. **als je character begint met vliegen als je de scene runt dan ben je deze stap vergeten**
+(Het kan ook als je character alsnog vliegt dat je dit per animatie moet doen, klik dan op edit op de animatie om op dezelfde plek te komen.)
 
 ![bake Y](../images/bakeY.png "bake Y")
 
@@ -81,6 +82,9 @@ https://www.mixamo.com/#/?page=1&query=jump&type=Motion%2CMotionPack
 ## Dubbelklik de nieuwe blend tree om deze te openen en aan te passen.
 
 ![blendtree](../images/blendtree-example.png "blendtree")
-## Zorg ervoor dat de blend type 2D Simple Directional is, maak twee parameters aan float X en float Y en selecteer deze in de blend tree. Nu kan je motion fields aanmaken met het '+' teken voor elke animatie, en deze in positie slepen zodat deze blended worden met de twee parameters die zijn meegegeven. Zorg ervoor dat idle in het midden staat met de relevante walk animaties eromheen.
+## Zorg ervoor dat de blend type 2D Simple Directional is, maak twee parameters aan float X en float Y en selecteer deze in de blend tree. Nu kan je motion fields aanmaken met het '+' teken voor elke animatie, en deze in positie slepen zodat deze blended worden met de twee parameters die zijn meegegeven. 
 
+Je kan in het plaatje zien dat alle motion fields hetzelfde heten door de import naam van mixamo, maar je kan erachter komen welke animatie waar staat door deze te selecteren in het motion field, Unity highlight dan de geselecteerde asset in de editor.
 ## Zet Foot IK aan op de blend tree node in de animator component.
+
+![blendtreeIK](../images/blendtree-footik.png "blendtreeIK")
