@@ -82,7 +82,7 @@ https://www.mixamo.com/#/?page=1&query=jump&type=Motion%2CMotionPack
 ## Dubbelklik de nieuwe blend tree om deze te openen en aan te passen.
 
 ![blendtree](../images/blendtree-example.png "blendtree")
-## Zorg ervoor dat de blend type 2D Simple Directional is, maak twee parameters aan float X en float Y en selecteer deze in de blend tree. Nu kan je motion fields aanmaken met het '+' teken voor elke animatie, en deze in positie slepen zodat deze blended worden met de twee parameters die zijn meegegeven. 
+## Zorg ervoor dat de blend type 2D Freeform Directional is, maak twee parameters aan float X en float Y en selecteer deze in de blend tree. Nu kan je motion fields aanmaken met het '+' teken voor elke animatie, en deze in positie slepen zodat deze blended worden met de twee parameters die zijn meegegeven. 
 
 Je kan in het plaatje zien dat alle motion fields hetzelfde heten door de import naam van mixamo, maar je kan erachter komen welke animatie waar staat door deze te selecteren in het motion field, Unity highlight dan de geselecteerde asset in de editor.
 ## Zet Foot IK aan op de blend tree node in de animator component.

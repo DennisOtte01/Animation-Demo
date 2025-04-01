@@ -6,10 +6,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField] private float jumpForce = 200f;
-    [SerializeField] private float torqueForce = 10f;
-    [SerializeField] private float movementSpeed = 500f;
+    [SerializeField] private float movementSpeed = 400f;
+    [SerializeField] private float strafeSpeed = 200f;
 
-    private float rotationInput = 0f;
+    private float strafeInput = 0f;
     private float movementInput = 0f;
     
 
@@ -21,25 +21,32 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
+        animator.SetFloat("x", localVelocity.x);
+        animator.SetFloat("y", localVelocity.z);
+    }
+    
     private void FixedUpdate()
     {
-        Vector3 movement = transform.forward * (movementInput * movementSpeed * Time.fixedDeltaTime);
-        rb.AddTorque(Vector3.up * (rotationInput * torqueForce));
-        rb.AddForce(movement);
+        Vector3 forwardMovement = transform.forward * (movementInput * movementSpeed * Time.fixedDeltaTime);
+        Vector3 strafeMovement = transform.right * (strafeInput * strafeSpeed * Time.fixedDeltaTime);
+
+        Vector3 movement = forwardMovement + strafeMovement;
+        rb.linearVelocity = new Vector3(movement.x, rb.linearVelocity.y, movement.z);
     }
 
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<float>();
-        animator.SetFloat("X", rb.linearVelocity.x);
-        animator.SetFloat("Y", rb.linearVelocity.y);
     }
 
-    void OnTurn(InputValue turnValue)
+    void OnStrafe(InputValue movementValue)
     {
-        rotationInput = turnValue.Get<float>();
+        strafeInput = movementValue.Get<float>();
     }
-
+    
     void OnJump()
     {
         animator.SetTrigger("Jump");
