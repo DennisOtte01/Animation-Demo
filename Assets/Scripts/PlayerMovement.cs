@@ -3,32 +3,48 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Rigidbody rb;
 
-    Animator animator;
-    Rigidbody rigidbody;
+    [SerializeField] private float jumpForce = 200f;
+    [SerializeField] private float torqueForce = 10f;
+    [SerializeField] private float movementSpeed = 500f;
 
-    void Awake()
+    private float rotationInput = 0f;
+    private float movementInput = 0f;
+
+    private Animator animator;
+
+    private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        rigidbody = GetComponent<Rigidbody>();
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        // Add var for checking direction for blend tree
     }
 
-    void OnMove(InputValue value)
+    private void FixedUpdate()
     {
-        Vector2 input = value.Get<Vector2>();
-        Vector3 move = new Vector3(input.x, 0, input.y);
-        rigidbody.linearVelocity = move * 5f;
+        Vector3 movement = transform.forward * (movementInput * movementSpeed * Time.fixedDeltaTime);
+        rb.AddTorque(Vector3.up * (rotationInput * torqueForce));
+        rb.AddForce(movement);
+    }
+
+    void OnMove(InputValue movementValue)
+    {
+        movementInput = movementValue.Get<float>();
+    }
+
+    void OnTurn(InputValue turnValue)
+    {
+        rotationInput = turnValue.Get<float>();
+    }
+
+    void OnJump()
+    {
+        animator.SetTrigger("Jump");
+        rb.AddForce(Vector3.up * jumpForce);
     }
 }
